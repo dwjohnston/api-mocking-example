@@ -1,7 +1,7 @@
 
 export type Profile = {
   id: string;
-  userType: 'admin' | 'user';
+  isInternalUser: boolean;
 };
 
 export async function getProfile(): Promise<Profile> {

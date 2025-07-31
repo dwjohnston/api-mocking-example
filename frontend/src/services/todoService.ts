@@ -13,7 +13,7 @@ export async function fetchTodos() : Promise<Array<Todo>>{
 
 
 
-export async function getTodosV2() {
+export async function fetchTodosV2() {
   const res = await fetch('http://localhost:3000/v2/todos');
   if (!res.ok) throw new Error('Network response was not ok');
   return res.json();

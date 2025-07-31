@@ -27,7 +27,7 @@ app.get('/v2/todos', (req, res) => {
 app.get('/v1/profile', (req, res) => {
   res.json({
     id: '12345',
-    userType: 'admin'
+    isInternalUser: true,
   });
 });
 
